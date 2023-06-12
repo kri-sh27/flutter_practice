@@ -38,66 +38,98 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: const Text("flutte container "),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: <Widget>[
-          const Text("A"),
-          const Text("B"),
-          const Text("data"),
-          const Text("data"),
-          const Text("data"),
-          ElevatedButton(
-              onPressed: () {
-                print("object");
-              },
-              child: const Text("Click here"))
-        ],
+      body: Center(
+        child: InkWell(
+          onTap: () {
+            print("correctly tapped on container");
+          },
+          child: Container(
+            height: 200,
+            width: 200,
+            color: Colors.pink,
+            child: Center(
+              child: InkWell(
+                onTap: () {
+                  print("tapped on text");
+                },
+                child: const Text(
+                  "Tap",
+                  style: TextStyle(fontSize: 20),
+                ),
+              ),
+            ),
+          ),
+        ),
       ),
-      // Center(
-      //   child: SizedBox(
-      //     width: 200,
-      //     // height: 200,
-      //     child: Center(
-      //       child: Image.asset('assets/images/flutter.jpg'),
-      //     ),
-      //   ),
-      // ),
-      // OutlinedButton(
-      //   onPressed: () {
-      //     print("button prede");
-      //   },
-      //   child: const Text("button"),
-      // )
-      // ElevatedButton(
-      //     onPressed: () {
-      //       print("button pressed");
-      //     },
-      //     child: const Text("button "))
-      // TextButton(
-      //   onPressed: () {
-      //     print("button pressed");
-      //   },
-      //   onLongPress: () {
-      //     print("long pressed");
-      //   },
-      //   child: const Text("click here"),
-      // )
-      // Center(
-      //   child: Container(
-      //     height: 100,
-      //     width: 100,
-      //     color: Colors.blueGrey,
-      //     child: const Center(
-      //         child: Text(
-      //       "hello friends",
-      //       style: TextStyle(
-      //           fontSize: 20,
-      //           color: Colors.black,
-      //           backgroundColor: Colors.pink,
-      //           fontWeight: FontWeight.w400),
-      //     )),
-      //   ),
-      // ),
     );
+    // Column(
+    //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    //   children: <Widget>[
+    //     const Row(
+    //         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+    //         children: [
+    //           Text("G"),
+    //           Text("B"),
+    //           Text("data"),
+    //           Text("data"),
+    //           Text("data"),
+    //         ]),
+    //     const Text("A"),
+    //     const Text("B"),
+    //     const Text("data"),
+    //     const Text("data"),
+    //     const Text("data"),
+    //     ElevatedButton(
+    //         onPressed: () {
+    //           print("object");
+    //         },
+    //         child: const Text("Click here"))
+    //   ],
+    // ),
+    // Center(
+    //   child: SizedBox(
+    //     width: 200,
+    //     // height: 200,
+    //     child: Center(
+    //       child: Image.asset('assets/images/flutter.jpg'),
+    //     ),
+    //   ),
+    // ),
+    // OutlinedButton(
+    //   onPressed: () {
+    //     print("button prede");
+    //   },
+    //   child: const Text("button"),
+    // )
+    // ElevatedButton(
+    //     onPressed: () {
+    //       print("button pressed");
+    //     },
+    //     child: const Text("button "))
+    // TextButton(
+    //   onPressed: () {
+    //     print("button pressed");
+    //   },
+    //   onLongPress: () {
+    //     print("long pressed");
+    //   },
+    //   child: const Text("click here"),
+    // )
+    // Center(
+    //   child: Container(
+    //     height: 100,
+    //     width: 100,
+    //     color: Colors.blueGrey,
+    //     child: const Center(
+    //         child: Text(
+    //       "hello friends",
+    //       style: TextStyle(
+    //           fontSize: 20,
+    //           color: Colors.black,
+    //           backgroundColor: Colors.pink,
+    //           fontWeight: FontWeight.w400),
+    //     )),
+    //   ),
+    // ),
   }
 }
