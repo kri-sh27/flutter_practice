@@ -34,34 +34,169 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    // var arrNames = ['a', 's', 'd', 'f', 'g'];
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("flutte container "),
-      ),
-      body: Center(
-        child: InkWell(
-          onTap: () {
-            print("correctly tapped on container");
-          },
-          child: Container(
-            height: 200,
-            width: 200,
-            color: Colors.pink,
-            child: Center(
-              child: InkWell(
-                onTap: () {
-                  print("tapped on text");
-                },
-                child: const Text(
-                  "Tap",
-                  style: TextStyle(fontSize: 20),
-                ),
+        appBar: AppBar(
+          title: const Text("flutte container "),
+        ),
+        body: Row(
+          children: [
+            Expanded(
+              child: Container(
+                width: 50,
+                height: 100,
+                color: Colors.pinkAccent,
               ),
             ),
-          ),
-        ),
-      ),
-    );
+            Expanded(
+              child: Container(
+                width: 50,
+                height: 100,
+                color: Colors.black,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                width: 50,
+                height: 100,
+                color: Colors.blue,
+              ),
+            ),
+            Expanded(
+              child: Container(
+                width: 50,
+                height: 100,
+                color: Colors.green,
+              ),
+            )
+          ],
+        )
+        // CircleAvatar()
+        // ListView.separated(
+        //   itemBuilder: (context, index) {
+        //     return ListTile(
+        //       leading: Text('$index+1'),
+        //       title: Text(arrNames[index]),
+        //       subtitle: const Text('Number'),
+        //       trailing: const Icon(Icons.add),
+        //     );
+        //   },
+        //   separatorBuilder: (context, index) {
+        //     return const Divider(
+        //       height: 20,
+        //       thickness: 2,
+        //     );
+        //   },
+        //   itemCount: arrNames.length,
+        // ),
+        // Padding(
+        //   padding: const EdgeInsets.all(8.0),
+        //   child: SingleChildScrollView(
+        //     child: Column(
+        //       children: [
+        //         SingleChildScrollView(
+        //           scrollDirection: Axis.horizontal,
+        //           child: Row(
+        //             children: [
+        //               Padding(
+        //                 padding: const EdgeInsets.all(8.0),
+        //                 child: Container(
+        //                   margin: EdgeInsets.only(right: 11),
+        //                   height: 200,
+        //                   color: Colors.pink,
+        //                 ),
+        //               ),
+        //               Container(
+        //                 margin: EdgeInsets.only(right: 11),
+        //                 height: 200,
+        //                 width: 200,
+        //                 color: Colors.pink,
+        //               ),
+        //               Container(
+        //                 margin: EdgeInsets.only(right: 11),
+        //                 height: 200,
+        //                 width: 200,
+        //                 color: Colors.pink,
+        //               ),
+        //               Container(
+        //                 margin: EdgeInsets.only(right: 11),
+        //                 height: 200,
+        //                 width: 200,
+        //                 color: Colors.pink,
+        //               ),
+        //               Container(
+        //                 margin: EdgeInsets.only(right: 11),
+        //                 height: 200,
+        //                 width: 200,
+        //                 color: Colors.pink,
+        //               ),
+        //             ],
+        //           ),
+        //         ),
+        //         Container(
+        //           margin: EdgeInsets.only(bottom: 11),
+        //           height: 200,
+        //           width: 200,
+        //           color: Colors.pink,
+        //         ),
+        //         Container(
+        //           margin: EdgeInsets.only(bottom: 11),
+        //           height: 200,
+        //           width: 200,
+        //           color: Colors.pink,
+        //         ),
+        //         Container(
+        //           margin: EdgeInsets.only(bottom: 11),
+        //           height: 200,
+        //           width: 200,
+        //           color: Colors.pink,
+        //         ),
+        //         Container(
+        //           margin: EdgeInsets.only(bottom: 11),
+        //           height: 200,
+        //           width: 200,
+        //           color: Colors.pink,
+        //         ),
+        //         Container(
+        //           margin: EdgeInsets.only(bottom: 11),
+        //           height: 200,
+        //           width: 200,
+        //           color: Colors.pink,
+        //         ),
+        //         Container(
+        //           margin: EdgeInsets.only(bottom: 11),
+        //           height: 200,
+        //           width: 200,
+        //           color: Colors.pink,
+        //         ),
+        //       ],
+        //     ),
+        //   ),
+        // )
+        //  Center(
+        //   child: InkWell(
+        //     onTap: () {
+        //       print("correctly tapped on container");
+        //     },
+        //     child: Container(
+        //       height: 200,
+        //       width: 200,
+        //       color: Colors.pink,
+        //       child: Center(
+        //         child: InkWell(
+        //           onTap: () {
+        //             print("tapped on text");
+        //           },
+        //           child: const Text(
+        //             "Tap",
+        //             style: TextStyle(fontSize: 20),
+        //           ),
+        //         ),
+        //       ),
+        //     ),
+        //   ),
+        // ),
+        );
     // Column(
     //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     //   children: <Widget>[
