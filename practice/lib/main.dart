@@ -39,38 +39,53 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: const Text("flutte container "),
         ),
-        body: Row(
-          children: [
-            Expanded(
-              child: Container(
-                width: 50,
-                height: 100,
-                color: Colors.pinkAccent,
-              ),
+        body: Center(
+          child: CircleAvatar(
+            backgroundColor: Colors.pinkAccent,
+            radius: 50,
+            child: Column(
+              children: [
+                Container(
+                  width: 50,
+                  child: Image.asset('assets/images/logo.png'),
+                ),
+                const Text("data"),
+              ],
             ),
-            Expanded(
-              child: Container(
-                width: 50,
-                height: 100,
-                color: Colors.black,
-              ),
-            ),
-            Expanded(
-              child: Container(
-                width: 50,
-                height: 100,
-                color: Colors.blue,
-              ),
-            ),
-            Expanded(
-              child: Container(
-                width: 50,
-                height: 100,
-                color: Colors.green,
-              ),
-            )
-          ],
+          ),
         )
+        // Row(
+        //   children: [
+        //     Expanded(
+        //       child: Container(
+        //         width: 50,
+        //         height: 100,
+        //         color: Colors.pinkAccent,
+        //       ),
+        //     ),
+        //     Expanded(
+        //       child: Container(
+        //         width: 50,
+        //         height: 100,
+        //         color: Colors.black,
+        //       ),
+        //     ),
+        //     Expanded(
+        //       child: Container(
+        //         width: 50,
+        //         height: 100,
+        //         color: Colors.blue,
+        //       ),
+        //     ),
+        //     Expanded(
+        //       child: Container(
+        //         width: 50,
+        //         height: 100,
+        //         color: Colors.green,
+        //       ),
+        //     )
+        //   ],
+        // )
         // CircleAvatar()
         // ListView.separated(
         //   itemBuilder: (context, index) {
