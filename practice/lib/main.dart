@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -50,10 +51,22 @@ class _MyHomePageState extends State<MyHomePage> {
           title: const Text("flutte container "),
         ),
         body: const Center(
-          child: Icon(
-            Icons.work_history,
-            size: 100,
-            color: Colors.green,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.work_history,
+                size: 100,
+                color: Colors.green,
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              FaIcon(
+                FontAwesomeIcons.amazon,
+                size: 100,
+              )
+            ],
           ),
         )
         // Container(
