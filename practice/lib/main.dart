@@ -32,6 +32,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  callBack() {
+    print(" button clicked !");
+  }
+
   @override
   Widget build(BuildContext context) {
     var arrColors = [
@@ -49,62 +53,64 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: const Text("flutte container "),
         ),
-        body: Container(
-          width: 200,
-          child: GridView.count(
-            crossAxisCount: 4,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  color: arrColors[0],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  color: arrColors[1],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  color: arrColors[2],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  color: arrColors[3],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  color: arrColors[4],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  color: arrColors[5],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  color: arrColors[6],
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Container(
-                  color: arrColors[7],
-                ),
-              ),
-            ],
-          ),
-        )
+        body:
+            ElevatedButton(onPressed: callBack, child: const Text("click here"))
+        //  Container(
+        //   width: 200,
+        //   child: GridView.count(
+        //     crossAxisCount: 4,
+        //     children: [
+        //       Padding(
+        //         padding: const EdgeInsets.all(8.0),
+        //         child: Container(
+        //           color: arrColors[0],
+        //         ),
+        //       ),
+        //       Padding(
+        //         padding: const EdgeInsets.all(8.0),
+        //         child: Container(
+        //           color: arrColors[1],
+        //         ),
+        //       ),
+        //       Padding(
+        //         padding: const EdgeInsets.all(8.0),
+        //         child: Container(
+        //           color: arrColors[2],
+        //         ),
+        //       ),
+        //       Padding(
+        //         padding: const EdgeInsets.all(8.0),
+        //         child: Container(
+        //           color: arrColors[3],
+        //         ),
+        //       ),
+        //       Padding(
+        //         padding: const EdgeInsets.all(8.0),
+        //         child: Container(
+        //           color: arrColors[4],
+        //         ),
+        //       ),
+        //       Padding(
+        //         padding: const EdgeInsets.all(8.0),
+        //         child: Container(
+        //           color: arrColors[5],
+        //         ),
+        //       ),
+        //       Padding(
+        //         padding: const EdgeInsets.all(8.0),
+        //         child: Container(
+        //           color: arrColors[6],
+        //         ),
+        //       ),
+        //       Padding(
+        //         padding: const EdgeInsets.all(8.0),
+        //         child: Container(
+        //           color: arrColors[7],
+        //         ),
+        //       ),
+        //     ],
+        //   ),
+        // )
         // Center(
         //   child: Container(
         //     width: 300,
