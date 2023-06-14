@@ -32,10 +32,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  callBack() {
-    print(" button clicked !");
-  }
-
   @override
   Widget build(BuildContext context) {
     var arrColors = [
@@ -53,9 +49,14 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: const Text("flutte container "),
         ),
-        body:
-            ElevatedButton(onPressed: callBack, child: const Text("click here"))
-        //  Container(
+        body: const Center(
+          child: Icon(
+            Icons.work_history,
+            size: 100,
+            color: Colors.green,
+          ),
+        )
+        // Container(
         //   width: 200,
         //   child: GridView.count(
         //     crossAxisCount: 4,
