@@ -34,26 +34,122 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    // var arrNames = ['a', 's', 'd', 'f', 'g'];
+    var arrColors = [
+      Colors.red,
+      Colors.pink,
+      Colors.green,
+      Colors.blue,
+      Colors.amber,
+      Colors.brown,
+      Colors.deepPurple,
+      Colors.lightBlueAccent,
+      Colors.teal
+    ];
     return Scaffold(
         appBar: AppBar(
           title: const Text("flutte container "),
         ),
-        body: Center(
-          child: CircleAvatar(
-            backgroundColor: Colors.pinkAccent,
-            radius: 50,
-            child: Column(
-              children: [
-                Container(
-                  width: 50,
-                  child: Image.asset('assets/images/logo.png'),
+        body: Container(
+          width: 200,
+          child: GridView.count(
+            crossAxisCount: 4,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  color: arrColors[0],
                 ),
-                const Text("data"),
-              ],
-            ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  color: arrColors[1],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  color: arrColors[2],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  color: arrColors[3],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  color: arrColors[4],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  color: arrColors[5],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  color: arrColors[6],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  color: arrColors[7],
+                ),
+              ),
+            ],
           ),
         )
+        // Center(
+        //   child: Container(
+        //     width: 300,
+        //     child: Column(
+        //       mainAxisAlignment: MainAxisAlignment.center,
+        //       children: [
+        //         TextField(
+        //           decoration: InputDecoration(
+        //             focusedBorder: OutlineInputBorder(
+        //                 borderRadius: BorderRadius.circular(11),
+        //                 borderSide: BorderSide(color: Colors.pink)),
+        //             border: OutlineInputBorder(
+        //               borderRadius: BorderRadius.circular(11),
+        //             ),
+        //           ),
+        //         ),
+        //         Container(
+        //           height: 20,
+        //         ),
+        //         TextField(
+        //           decoration: InputDecoration(
+        //             border: OutlineInputBorder(
+        //               borderRadius: BorderRadius.circular(11),
+        //             ),
+        //           ),
+        //         ),
+        //       ],
+        //     ),
+        //   ),
+        // )
+        //  Center(
+        //   child: CircleAvatar(
+        //     backgroundColor: Colors.pinkAccent,
+        //     radius: 50,
+        //     child: Column(
+        //       children: [
+        //         Container(
+        //           width: 50,
+        //           child: Image.asset('assets/images/logo.png'),
+        //         ),
+        //         const Text("data"),
+        //       ],
+        //     ),
+        //   ),
+        // )
         // Row(
         //   children: [
         //     Expanded(
