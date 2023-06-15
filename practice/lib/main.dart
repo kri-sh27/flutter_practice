@@ -50,25 +50,32 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: const Text("flutte container "),
         ),
-        body: const Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(
-                Icons.work_history,
-                size: 100,
-                color: Colors.green,
-              ),
-              SizedBox(
-                width: 10,
-              ),
-              FaIcon(
-                FontAwesomeIcons.amazon,
-                size: 100,
-              )
-            ],
+        body: ConstrainedBox(
+          constraints: BoxConstraints(maxWidth: 200),
+          child: Text(
+            "Helo jsndfnljfnlkfsjlfnljfnsljfnfnkkngfkngfkkfnsfkkgnkenkkdfkkvfkvnkvkvdnfkvwolrd",
+            overflow: TextOverflow.clip,
           ),
         )
+        // const Center(
+        //   child: Row(
+        //     mainAxisAlignment: MainAxisAlignment.center,
+        //     children: [
+        //       Icon(
+        //         Icons.work_history,
+        //         size: 100,
+        //         color: Colors.green,
+        //       ),
+        //       SizedBox(
+        //         width: 10,
+        //       ),
+        //       FaIcon(
+        //         FontAwesomeIcons.amazon,
+        //         size: 100,
+        //       )
+        //     ],
+        //   ),
+        // )
         // Container(
         //   width: 200,
         //   child: GridView.count(
